@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    *{
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    border-collapse: collapse;
+}
+
+table tr td{
+    width: 100px;
+    height: 100px;
+}
+
+.color1{
+    background-color: #3f3f3f;
+}
+
+.color2{
+    background-color: #ffaa3b;
+}
+
+</style>
+</head>
+<body>
+
+
+    <!-- <table class="table"><tr>
+    {% for i in range(4): %}
+            <td class='color1'></td>
+            <td class='color2'></td>
+            <td class='color1'></td>
+            <td class='color2'></td>
+            <td class='color1'></td>
+            <td class='color2'></td>
+            <td class='color1'></td>
+            <td class='color2'></td>
+        </tr><tr>
+            <td class='color2'></td>
+            <td class='color1'></td>
+            <td class='color2'></td>
+            <td class='color1'></td>
+            <td class='color2'></td>
+            <td class='color1'></td>
+            <td class='color2'></td>
+            <td class='color1'></td>
+        </tr><tr>
+    {% endfor %}
+    </table> -->
+
+    <table class="table">
+            {% for i in range(4): %}
+                <tr>
+                    {% for j in range(4): %}
+                    <td class='color1'></td>
+                    <td class='color2'></td>
+                    {% endfor %}
+                </tr
+                ><tr>
+                    {% for j in range(4): %}
+                    <td class='color2'></td>
+                    <td class='color1'></td>
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+            </table>
+
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* border-collapse: collapse; */
+}
+/* 
+table tr td{
+    width: 100px;
+    height: 100px;
+} */
+
+.table tr{
+    font-size: 0;
+}
+
+.color1{
+    background-color: #3f3f3f;
+}
+
+.color2{
+    background-color: #ffaa3b;
+}
